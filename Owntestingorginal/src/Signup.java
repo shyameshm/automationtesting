@@ -69,6 +69,7 @@ public class Signup {
 				.sendKeys("Little");
 		driver.findElement(By.cssSelector("li[aria-label='Little Rock'] span[class='ng-star-inserted']")).click();
 		driver.findElement(By.id("zipcode")).sendKeys("72201");
+		System.out.println("YRDY");
 
 	}
 
