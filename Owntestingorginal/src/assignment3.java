@@ -46,7 +46,7 @@ public class assignment3 {
 		}
 		
 		driver.findElement(By.xpath("//a[contains(text(),'Checkout')]")).click();
-		driver.close();
+		driver.quit();
 		
 		
 		

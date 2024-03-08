@@ -22,6 +22,8 @@ public class Assignemnet {
 		System.out.println((driver.findElement(By.xpath("//input[@id='checkBoxOption1']")).isSelected()));
 
 		System.out.println(driver.findElements(By.xpath("//input[@type='checkbox']")).size());
+		driver.quit();
+		
 
 	}
 

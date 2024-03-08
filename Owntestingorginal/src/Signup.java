@@ -21,7 +21,7 @@ public class Signup {
 		// WebDriver driver = new FirefoxDriver();
 		// WebDriver driver = new EdgeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://testtgg.goodgrid.com");
+		driver.get("https://preprodtgg.goodgrid.com");
 		String PageName = driver.getTitle();
 		System.out.println(PageName);
 		System.out.println(driver.getCurrentUrl());
@@ -53,7 +53,7 @@ public class Signup {
 		Date date = new Date();
 		SimpleDateFormat sdf = new SimpleDateFormat("ddMMyyyy");
 		String Email = sdf.format(date);
-		driver.findElement(By.id("regEmail")).sendKeys(Email + "@mailinator.com");
+		driver.findElement(By.id("regEmail")).sendKeys(Email + "fg@mailinator.com");
 
 		driver.findElement(By.cssSelector(
 				".ng-tns-c44-1.ui-dropdown-label.ui-inputtext.ui-corner-all.ui-placeholder.ng-star-inserted")).click();

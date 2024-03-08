@@ -37,7 +37,7 @@ public class Assignment2 {
 
 		System.out.println(finalAlert.trim());
 		Assert.assertEquals(finalAlert.trim(), alertText);
-		driver.close();
+		driver.quit();
 
 	}
 
