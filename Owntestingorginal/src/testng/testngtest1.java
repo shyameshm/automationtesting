@@ -1,5 +1,7 @@
 package testng;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
@@ -24,6 +26,7 @@ public class testngtest1 {
 	}
 	@AfterTest
 	public void WebApp2 () {
+	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 	driver.close();
 
 	}
