@@ -5,8 +5,9 @@
     <classes>
       <class name="testng.testngtest1">
         <methods>
-          <include name="test1of1"/>
-          <include name="test1"/>
+          <include name="webApp1"/>
+          <include name="webApp"/>
+          <include name="WebApp2"/>
         </methods>
       </class> <!-- testng.testngtest1 -->
     </classes>

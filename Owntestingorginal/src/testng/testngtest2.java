@@ -4,8 +4,7 @@ import org.testng.annotations.Test;
 
 public class testngtest2 {
 	
-	@Test
-	
+	@Test(groups={"smoke"})
 	public void mobApp ()
 	{
 		System.out.println("This is a test 2");

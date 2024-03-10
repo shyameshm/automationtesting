@@ -2,44 +2,115 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-10T16:08:09 IST" name="Suite" finished-at="2024-03-10T16:08:09 IST" duration-ms="844">
+  <suite started-at="2024-03-10T23:10:19 IST" name="Suite" finished-at="2024-03-10T23:10:38 IST" duration-ms="19021">
     <groups>
+      <group name="smoke">
+        <method signature="testngtest3.Car()[pri:0, instance:testng.testngtest3@1536602f]" name="Car" class="testng.testngtest3"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2024-03-10T16:08:09 IST" name="Test" finished-at="2024-03-10T16:08:09 IST" duration-ms="742">
+    <test started-at="2024-03-10T23:10:19 IST" name="Test" finished-at="2024-03-10T23:10:38 IST" duration-ms="18959">
       <class name="testng.testngtest4">
-        <test-method signature="Laptop1()[pri:0, instance:testng.testngtest4@7e242b4d]" started-at="2024-03-10T16:08:09 IST" name="Laptop1" finished-at="2024-03-10T16:08:09 IST" duration-ms="2" status="PASS">
+        <test-method signature="Laptop1()[pri:0, instance:testng.testngtest4@4ebea12c]" started-at="2024-03-10T23:10:38 IST" name="Laptop1" finished-at="2024-03-10T23:10:38 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Laptop1 -->
       </class> <!-- testng.testngtest4 -->
       <class name="testng.testngtest1">
-        <test-method is-config="true" signature="webApp1()[pri:0, instance:testng.testngtest1@eb6449b]" started-at="2024-03-10T16:08:09 IST" name="webApp1" finished-at="2024-03-10T16:08:09 IST" duration-ms="511" status="PASS">
+        <test-method is-config="true" signature="webApp1()[pri:0, instance:testng.testngtest1@68759011]" started-at="2024-03-10T23:10:19 IST" name="webApp1" finished-at="2024-03-10T23:10:19 IST" duration-ms="380" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- webApp1 -->
-        <test-method signature="webApp()[pri:0, instance:testng.testngtest1@eb6449b]" started-at="2024-03-10T16:08:09 IST" name="webApp" finished-at="2024-03-10T16:08:09 IST" duration-ms="13" status="PASS">
+        <test-method signature="webApp(java.lang.String)[pri:0, instance:testng.testngtest1@68759011]" started-at="2024-03-10T23:10:19 IST" name="webApp" finished-at="2024-03-10T23:10:38 IST" duration-ms="18481" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://testtgg.goodgrid.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- webApp -->
-        <test-method is-config="true" signature="WebApp2()[pri:0, instance:testng.testngtest1@eb6449b]" started-at="2024-03-10T16:08:09 IST" name="WebApp2" finished-at="2024-03-10T16:08:09 IST" duration-ms="145" status="PASS">
+        <test-method is-config="true" signature="WebApp2()[pri:0, instance:testng.testngtest1@68759011]" started-at="2024-03-10T23:10:38 IST" name="WebApp2" finished-at="2024-03-10T23:10:38 IST" duration-ms="31" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=122.0.6261.112)
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [601550737ebc672452db172013dbf0a3, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.111 (9d4c1072da6..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59181/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 601550737ebc672452db172013dbf0a3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=122.0.6261.112)
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [601550737ebc672452db172013dbf0a3, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.111 (9d4c1072da6..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59181/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 601550737ebc672452db172013dbf0a3
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:410)
+at testng.testngtest1.WebApp2(testngtest1.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+at org.testng.TestRunner.afterRun(TestRunner.java:933)
+at org.testng.TestRunner.run(TestRunner.java:624)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WebApp2 -->
       </class> <!-- testng.testngtest1 -->
       <class name="testng.testngtest3">
-        <test-method is-config="true" signature="car2()[pri:0, instance:testng.testngtest3@68759011]" started-at="2024-03-10T16:08:09 IST" name="car2" finished-at="2024-03-10T16:08:09 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="car2()[pri:0, instance:testng.testngtest3@1536602f]" started-at="2024-03-10T23:10:19 IST" name="car2" finished-at="2024-03-10T23:10:19 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- car2 -->
-        <test-method signature="Car()[pri:0, instance:testng.testngtest3@68759011]" started-at="2024-03-10T16:08:09 IST" name="Car" finished-at="2024-03-10T16:08:09 IST" duration-ms="3" status="PASS">
+        <test-method signature="Car()[pri:0, instance:testng.testngtest3@1536602f]" started-at="2024-03-10T23:10:38 IST" name="Car" finished-at="2024-03-10T23:10:38 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Car -->
       </class> <!-- testng.testngtest3 -->
     </test> <!-- Test -->
-    <test started-at="2024-03-10T16:08:09 IST" name="testngtest2" finished-at="2024-03-10T16:08:09 IST" duration-ms="4">
+    <test started-at="2024-03-10T23:10:38 IST" name="testngtest2" finished-at="2024-03-10T23:10:38 IST" duration-ms="2">
       <class name="testng.testngtest2">
-        <test-method is-config="true" signature="mobApp1()[pri:0, instance:testng.testngtest2@4215838f]" started-at="2024-03-10T16:08:09 IST" name="mobApp1" finished-at="2024-03-10T16:08:09 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="mobApp1()[pri:0, instance:testng.testngtest2@70dd7e15]" started-at="2024-03-10T23:10:38 IST" name="mobApp1" finished-at="2024-03-10T23:10:38 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mobApp1 -->

@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 public class testngtest3 {
 	
-	@Test
+	@Test(groups={"smoke"})
 	
 	public void Car ()
 	{
